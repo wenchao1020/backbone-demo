@@ -1,0 +1,312 @@
+@charset "utf-8";
+/*一些基本样式*/
+body{
+    font-size: 14px;
+    color: #666;
+    font-family: "Microsoft YaHei", "微软雅黑", "SimHei", "黑体";
+    background: #f7f8fa;
+}
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+#body-container {
+    position: relative;
+    margin-left: 210px;
+    height: 100%;
+    margin-top: 0;
+    z-index: 998;
+    transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.secondMenuDisplay {
+    background: #fff;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 60px;
+    padding: 10px 10px 5px 15px;
+    overflow: auto;
+}
+/*width*/
+.w100{
+    width: 100%;
+}
+.w-main{
+    width: 1200px;
+}
+/*height*/
+.h100{
+    height: 100%;
+}
+/*text-align*/
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align:right;
+}
+/*float*/
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clear:after {
+    content:"";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clear {
+    zoom: 1;
+    clear: both;
+}
+.pr{
+    position: relative;
+}
+.pa{
+    position: absolute;
+}
+/*font-size*/
+.fb{
+    font-weight: bold;
+}
+.fz12{
+    font-size: 12px;
+}
+.fz16{
+    font-size: 16px;
+}
+.fz18{
+    font-size: 18px;
+}
+/*padding*/
+.pt5{
+    padding-top: 5px;
+}
+.pl5{
+    padding-left: 5px;
+}
+.pl10{
+    padding-left: 10px;
+}
+.pl15{
+    padding-left: 15px;
+}
+.pl20{
+    padding-left: 20px;
+}
+.pl25{
+    padding-left: 25px;
+}
+.pl30 {
+    padding-left: 30px;
+}
+/*margin基本样式*/
+.margin-auto{
+    margin: 0 auto;
+}
+.mt5{
+    margin-top: 5px;
+}
+.mt10{
+    margin-top:10px;
+}
+.mt15{
+    margin-top:15px;
+}
+.mt20{
+    margin-top:20px;
+}
+.mt30{
+    margin-top:30px;
+}
+.mb5{
+    margin-bottom: 5px;
+}
+.mb10{
+    margin-bottom:10px;
+}
+.mb15{
+    margin-bottom:15px;
+}
+.mb20{
+    margin-bottom:20px;
+}
+.ml0{
+    margin-left: 0;
+}
+.ml5{
+    margin-left: 5px;
+}
+.ml10{
+    margin-left:10px;
+}
+.ml15{
+    margin-left:15px;
+}
+.ml20{
+    margin-left:20px;
+}
+.ml25{
+    margin-left:25px;
+}
+.ml30{
+    margin-left:30px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.mr10{
+    margin-right:10px;
+}
+.mr20{
+    margin-right:20px;
+}
+.mr25{
+    margin-right:25px;
+}
+.mr30{
+    margin-right:30px;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+.hand{
+    cursor: pointer;
+}
+.bgff{
+    background-color:#fff;
+}
+input::-webkit-input-placeholder{
+    color: #bcbcbc;
+}
+input::-moz-placeholder{
+    color: #bcbcbc;
+}
+input:-moz-placeholder{
+    color: #bcbcbc;
+}
+input:-ms-input-placeholder{
+    color: #bcbcbc;
+}
+.checkbox{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.fr {
+    float: right;
+}
+
+
+.panel-header{
+    padding: 15px;
+    color: #666;
+    border-bottom: 1px solid #eee;
+}
+.panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+.search-form {
+    margin-top: 20px;
+}
+.result {
+    padding: 0 10px;
+}
+.search-form input {
+    margin-right: 20px;
+}
+.normal-form {
+    padding: 0 10px;
+}
+.hide {
+    display: none;
+}
+.layui-body{overflow-y: scroll;}
+.search-form .layui-form-label {
+    width: 70px;
+}
+.search-form .layui-form-item .layui-input-inline{
+    width: 200px;
+}
+.layui-table-body {
+    overflow-y: scroll;
+}
+
+input[readonly]{
+    background: #eee;
+}
+.layui-input.layui-unselect[readonly]{
+    background: #fff;
+}
+.layui-layer {
+    border: solid 1px #eee;
+}
+
+.layui-form-label {
+    width: 70px;
+}
+span.need {
+    color: #dd0000;
+}
+
+#page{
+    text-align: right;
+}
+.content {
+    min-height: 500px;
+}
+.box-border {
+    border: solid 1px #eee;
+}
+table a {
+    color: #01AAED;
+}
+table a:hover {
+    color: #018cce;
+}
+.content-table {
+    width: 95%;
+    margin: 0 auto;
+}
+.pop-form .layui-form-label {
+    width: 70px;
+}
+.pop-form .layui-input-block {
+    margin-left: 100px;
+}
+
+.layui-input[disabled] {
+    background: #eee;
+}
+.layui-textarea[disabled] {
+    background: #eee;
+}
+
+.panel-title button{
+    margin-top: -5px;
+}
+
+.layui-form-selected dl {
+    width: 100%;
+}

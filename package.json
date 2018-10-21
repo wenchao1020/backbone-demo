@@ -1,0 +1,39 @@
+{
+  "name": "backbone-demo",
+  "version": "1.0.0",
+  "description": "nothing",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "express": "^4.13.4",
+    "http-proxy-middleware": "^0.17.4",
+    "express-http-proxy": "^0.6.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^3.2.2",
+    "gulp-jshint": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-webpack": "^1.5.0",
+    "html-loader": "^0.4.3",
+    "jshint": "^2.9.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.15"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "gulp-clean": "^0.3.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "nothing"
+  ]
+}

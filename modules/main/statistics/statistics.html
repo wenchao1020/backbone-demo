@@ -1,0 +1,45 @@
+
+<div class="layui-col-xs12 box-border">
+        <div class="panel-header">
+            <div class="panel-title ">数据统计
+            </div>
+        </div>
+        <div class="content">
+            <form class="layui-form search-form">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">日期</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="date" id="date" placeholder="请选择日期" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline fr">
+                        <button class="layui-btn layui-btn-sm" id="searchStat" lay-submit lay-filter="searchStat">查询</button>
+                        <button class="layui-btn layui-btn-primary layui-btn-sm" type="reset" >重置</button>
+                    </div>
+                </div>
+            </form>
+            <p class="quick-search">快捷查询：
+                <span data-spantype="month">按月</span>|
+                <span data-spantype="quarter">按季度</span>
+                <span data-spantype="year">按年</span>
+            </p>
+            <div class="content-table">
+                <div style="width: 100%; height: 400px;" id="echarts">
+
+                </div>
+
+                <div style="width: 100%; height: 400px;margin-top: 20px;" id="proBar">
+
+                </div>
+
+                <div style="width: 100%; height: 400px;margin-top: 20px;" id="sellBar">
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+

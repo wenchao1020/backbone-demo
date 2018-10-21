@@ -1,0 +1,9 @@
+.quick-search {
+    padding-left: 56px;
+    margin-bottom: 20px;
+}
+.quick-search span {
+    color: #01AAED;
+    padding: 0 20px;
+    cursor: pointer;
+}

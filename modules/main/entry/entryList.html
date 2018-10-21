@@ -1,0 +1,55 @@
+
+<div class="layui-col-xs12 box-border">
+        <div class="panel-header">
+            <div class="panel-title ">进场登记
+                <button type="button" class="layui-btn layui-btn-normal layui-btn-sm fr" id="add">新增</button>
+            </div>
+        </div>
+        <div class="content">
+            <form class="layui-form search-form">
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label class="layui-form-label">零售商名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  placeholder="请输入零售商名称" name="cbizName"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">供应商名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  placeholder="请输入供应商名称" name="pbizName"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">商品名称</label>
+                        <div class="layui-input-inline">
+                            <input type="text"  placeholder="请输入商品名称" name="commodityName"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline">
+                        <label class="layui-form-label">进场日期</label>
+                        <div class="layui-input-inline">
+                            <input type="text" name="date" id="date" placeholder="请选择进场日期" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-inline fr">
+                        <button class="layui-btn layui-btn-sm" lay-submit lay-filter="searchEntry">查询</button>
+                        <button class="layui-btn layui-btn-primary layui-btn-sm" type="reset" >重置</button>
+                    </div>
+                </div>
+
+            </form>
+
+            <div class="content-table">
+                <table class="layui-hide" id="entryList" lay-filter="entryList"></table>
+                <div id="page">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+

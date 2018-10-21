@@ -1,0 +1,80 @@
+<div style="margin-top: 20px;padding-right: 10px;">
+<form class="layui-form popFormL" >
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>农贸市场名称</label>
+        <div class="layui-input-block">
+            <input type="text"
+                   name="cnodeName"
+                   value="<%= data.userInfo.nodeName %>"
+                   disabled class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>零售商名称</label>
+        <div class="layui-input-block">
+            <select name="cbizCode" lay-filter="cbiz" lay-verify="required" lay-verType="tips">
+                <option value="">请选择零售商名称</option>
+                <% _.each(data.userInfo.bizs, function(item){ %>
+                <option value="<%- item.bizCode %>"><%- item.bizName %> - <%- item.bizCode %></option>
+                <% }); %>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>商品名称</label>
+        <div class="layui-input-block">
+            <select name="commodityCode" lay-search lay-verify="required" lay-verType="tips" lay-filter="commodity">
+                <option value="">请选择商品名称</option>
+                <% _.each(data.productList, function(item){ %>
+                <optgroup label="<%- item.name %>">
+                    <% _.each(item.sons, function(item){ %>
+                    <option value="<%- item.code %>"><%- item.name %> - <%- item.code %></option>
+                    <% }); %>
+                </optgroup>
+                <% }); %>
+            </select>
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>商品编码</label>
+        <div class="layui-input-block">
+            <input type="text" id="commodictCode"
+                   disabled class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>重量（kg）</label>
+        <div class="layui-input-block">
+            <input type="text" name="quantity"
+                   lay-verify="required" lay-verType="tips"
+                   placeholder="请输入重量"
+                   class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label"><span class="need">*</span>单价（元/kg）</label>
+        <div class="layui-input-block">
+            <input type="text" name="price"
+                   placeholder="请输入单价"
+                   lay-verify="required" lay-verType="tips"
+                   class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">供应商</label>
+        <div class="layui-input-block">
+            <select name="pnodeCode" lay-search lay-filter="biz">
+                <option value="">请选择供应商</option>
+                <% _.each(data.bizList, function(item){ %>
+                <option value="<%- item.bizCode %>"><%- item.bizName %> - <%- item.bizCode %> - <%- item.nodeName %></option>
+                <% }); %>
+            </select>
+        </div>
+    </div>
+
+    <!--该按钮用于触发表单验证-->
+    <button class="layui-btn" lay-submit lay-filter="entryBaseForm" style="display: none">保存</button>
+
+</form>
+</div>
